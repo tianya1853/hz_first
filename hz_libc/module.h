@@ -9,7 +9,7 @@ OS:           Linux-3.3.0
 Complier:     arm-linux-gnueabi-gcc (version: 4.6.3)
 HardWare:     
 Version :     v0.0.1
-Description:  TYPE.h
+Description:  module.h
 History------------------------------------------------------------
 Author:
 Date:
