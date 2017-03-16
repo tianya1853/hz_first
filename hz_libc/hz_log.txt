@@ -1,0 +1,8 @@
+[20160831122600:13892s.319458871ns][main.c][line_10]<debug:love jasmine
+[20160831122622:13914s.548568388ns][main.c][line_10]<debug:love jasmine
+[20160831153810:25422s.358836494ns][main.c][line_11]<LT_DEBUG:love jasmine
+[20160831153810:25422s.359045151ns][main.c][line_12]<DEBUG:love jasmine
+[20160831153810:25422s.359177602ns][main.c][line_13]<adf:love jasmine
+[20160831154031:25563s.503461757ns][main.c][line_11]<LT_DEBUG:love jasmine
+[20160831154031:25563s.503649170ns][main.c][line_12]<DEBUG:love jasmine
+[20160831154031:25563s.503772681ns][main.c][line_13]<adf:love jasmine
