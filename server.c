@@ -3,7 +3,7 @@
 
 
 
-void *clent_send_handle(void*arg)
+void *server_send_handle(void*arg)
 {
 	s32 res=0;
 	d8 *string="hello";
@@ -25,7 +25,7 @@ void *clent_send_handle(void*arg)
 	return NULL;
 }
 
-void *clent_recv_handle(void*arg)
+void *server_recv_handle(void*arg)
 {
 	s32 res=0;
 	d8 string[20];
@@ -54,7 +54,7 @@ void *clent_recv_handle(void*arg)
 
 
 
-void *client_send_msg_handle(void*arg)
+void *server_send_msg_handle(void*arg)
 {
 	s32 res=0;
 	d8 *string="msg hello";
@@ -84,7 +84,7 @@ void *client_send_msg_handle(void*arg)
 	return NULL;
 }
 
-void *client_recv_msg_handle(void*arg)
+void *server_recv_msg_handle(void*arg)
 {
 	s32 res=0;
 	//d8 string[20];
@@ -118,23 +118,23 @@ int main (int argc,char **argv)
 
 
 	#define SOCKET_COUNT 1
-	socket_creat_arg_t client[SOCKET_COUNT];
+	socket_creat_arg_t server[SOCKET_COUNT];
 
 
 
 
-	memset(&client[i],0,sizeof(client[i]));
-	sprintf(client[i].ip_str,"127.0.0.1");
-	client[0].port=1234;
+	memset(&server[i],0,sizeof(server[i]));
+	sprintf(server[i].ip_str,"127.0.0.1");
+	server[0].port=1234;
 
-	//client[0].thread_recv.thread_f=clent_recv_handle;
-	//client[0].thread_send.thread_f=clent_send_handle;
+	//server[0].thread_recv.thread_f=server_recv_handle;
+	//server[0].thread_send.thread_f=server_send_handle;
 
-	client[0].thread_recv.thread_f=client_recv_msg_handle;
-	client[0].thread_send.thread_f=client_send_msg_handle;
+	server[0].thread_recv.thread_f=server_recv_msg_handle;
+	server[0].thread_send.thread_f=server_send_msg_handle;
 
 
-	thread_socket_tcp_s_creat(&client[0]);
+	thread_socket_tcp_s_creat(&server[0]);
 
 
 
