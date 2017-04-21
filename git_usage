@@ -1,0 +1,8 @@
+
+
+git add .
+#undo git add
+git reset .
+
+
+git push origin master
