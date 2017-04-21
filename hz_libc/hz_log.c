@@ -25,7 +25,7 @@ Description:
 //#include "hz_log.h"
 
 
-hz_mutex_t mutex_print={0,PTHREAD_MUTEX_INITIALIZER};
+hz_mutex_t mutex_print;   //={0,PTHREAD_MUTEX_INITIALIZER};
 
 
 
@@ -106,7 +106,8 @@ static s32 _hz_log_init_()
 	sprintf(tmp_cmd,"mkdir -p %s ",hz_log_dir);
 	
 	system(tmp_cmd);
-	//hz_mutex_init(&mutex_print,NULL);
+	hz_mutex_init(&mutex_print,NULL);
+	sprintf(mutex_print.name,"lt_log");
 	return ret;
 
 }
@@ -248,11 +249,16 @@ int lt_runtime(lt_time_t *lt_time,s32 printtime)
 	{
 		return -1;
 	}
+	lt_time->year=tblock->tm_year+1900;
+	lt_time->mon =tblock->tm_mon+1;
+	lt_time->day =tblock->tm_mday ;
+	lt_time->hour =tblock->tm_hour ;
+	lt_time->min =tblock->tm_min ;
+	lt_time->sec =tblock->tm_sec ;
 	lt_time->time_s = (s32)time1.tv_sec;
 	lt_time->time_ns = time1.tv_nsec;
 	return 0; 
 }
-
 
 
 

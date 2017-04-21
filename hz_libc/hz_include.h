@@ -15,7 +15,10 @@ Author:
 Date:
 Version:
 Description:
-*******************************************************************/#ifndef __HZ_INCLUDE_H__
+*******************************************************************/
+
+
+#ifndef __HZ_INCLUDE_H__
 #define __HZ_INCLUDE_H__
 
 #include <stdio.h>
@@ -39,6 +42,10 @@ system()
 */
 #include <stdlib.h>
 
+/**
+sqlite3
+*/
+#include "sqlite3.h"
 
 
 #include "hz_type.h"
@@ -48,7 +55,7 @@ system()
 #include "hz_socket.h"
 #include "hz_memory.h"
 #include "hz_thread.h"
-
+#include "hz_sqlite.h"
 
 
 #endif /* !__TYPE_H__ */

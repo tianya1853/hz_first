@@ -20,7 +20,7 @@ Description:
 
 #ifndef __TYPE_H__
 #define __TYPE_H__
-
+#include <stdio.h>
 //#pragma pack (16)
 
 #ifndef NULL
@@ -41,6 +41,13 @@ typedef signed long long s64;
 typedef char  d8;
 typedef int   d32;
 typedef struct{
+	u32 year;
+	u32 mon;
+	u32 day;
+	u32 hour;
+	u32 min;
+	u32 sec;
+
 	s32 time_s;
 	s32 time_ns;
 }lt_time_t;
@@ -102,6 +109,38 @@ typedef enum
 	RET_FAIL
 }hz_ret_t;
 
+
+typedef struct _hz_ret_o_
+{
+	hz_ret_t   v;//value
+	//d8         ret_str[128];
+	//hz_mutex_t ret_mutex;
+}hz_ret_o;//object
+
+typedef struct _hz_tmp_o_
+{
+	//s32 res;
+	s32 v1;
+	s32 v2;
+	s32 v3;
+	s32 i;
+	s32 j;
+	s32 casx;
+	FILE *fp;
+	hz_ret_o ret;//used for return of function	
+}hz_tmp_o;//object  抛弃res，减少res与ret的混淆
+
+
+typedef struct
+{
+	d8 name[16];
+	d8 version[16];
+	s32 v;//value
+	void *vp;
+	void *action;
+}hz_object;
+
+void hz_tmp_o_init(hz_tmp_o *hz_tmp);
 enum
 {
 	CASX_EXIT=0,
@@ -137,6 +176,7 @@ enum
 
 
 
+#define BIT(x) (1<<(x))
 
 
 #define hz_struct_offset(type, member) (unsigned int)(&(((type *)0)->member))
@@ -232,6 +272,98 @@ enum
 		}
 	}
 */
+
+
+
+
+
+
+
+
+/*
+	hz_tmp_o tmp;
+	tmp.casx = CASX_INIT ;	
+	while( tmp.casx  )
+	{
+		switch(  tmp.casx  )
+		{
+		case CASX_INIT:
+			{
+			}
+			tmp.casx  = CASX_STEP_00 ;
+			break;
+		case CASX_STEP_00:
+			{
+			}
+			tmp.casx  = CASX_STEP_01 ;
+			break;
+		case CASX_STEP_01:
+			{
+			}
+			tmp.casx  = CASX_STEP_02 ;
+			break;
+		case CASX_STEP_02:
+			{
+			}
+			tmp.casx  = CASX_STEP_03 ;
+			break;
+		case CASX_STEP_03:
+			{
+			}
+			tmp.casx  = CASX_STEP_04 ;
+			break;
+		case CASX_STEP_04:
+			{
+			}
+			tmp.casx  = CASX_STEP_05 ;
+			break;
+		case CASX_STEP_05:
+			{
+			}
+			tmp.casx  = CASX_FREE_MEM ;
+			break;
+		case CASX_LOOP_00:
+			{
+			}
+			tmp.casx  = CASX_LOOP_00 ;
+			break;
+		case CASX_LOOP_01:
+			{
+			}
+			tmp.casx  = CASX_LOOP_01 ;
+			break;
+		case CASX_FREE_MEM:
+			{
+			}
+			tmp.casx  = CASX_CLOSE_FILE ;
+			break;
+		case CASX_CLOSE_FILE:
+			{
+			}
+			tmp.casx  = CASX_EXIT ;
+			break;
+		case CASX_HELP:
+			{
+			}
+			tmp.casx  = CASX_EXIT ;
+			break;
+		default:
+			{
+				tmp.casx  = CASX_EXIT ;
+				break;
+			}
+		}
+	}
+*/
+
+
+
+
+
+
+
+
+
 
 
 #endif /* !__TYPE_H__ */

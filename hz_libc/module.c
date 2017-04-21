@@ -21,7 +21,7 @@ Description:
 
 /**
 module函数功能描述
-@param arg1 arg2描述
+@param arg1 arg2描述  
 @param arg2 arg2描述
 @return 返回值描述
 */
@@ -42,10 +42,9 @@ hz_ret_t module_function(s8 * arg1,u32 arg2)
 		ret = ret;
 		res = res;
 		i = i;
-	}
-	while(0);
+	}while(0);
 
-	while(casx)
+	while( casx )
 	{
 		switch(casx)
 		{

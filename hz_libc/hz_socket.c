@@ -193,6 +193,7 @@ static void *thread_socket_module_entry_point(void *arg)
 			}
 			lt_debug("thread_heartbeat had stop");
 			close(sock_arg->connectfd);
+			sock_arg->hz_connectfd = 0;
 		}
 		if ( sock_arg->thread_recv.thread_f != NULL )
 		{
@@ -204,6 +205,7 @@ static void *thread_socket_module_entry_point(void *arg)
 			}
 			lt_debug("thread_recv had stop");
 			close(sock_arg->connectfd);
+			sock_arg->hz_connectfd = 0;
 		}
 		if ( sock_arg->thread_send.thread_f != NULL )
 		{
@@ -215,6 +217,7 @@ static void *thread_socket_module_entry_point(void *arg)
 			}
 			lt_debug("thread_send had stop");
 			close(sock_arg->connectfd);
+			sock_arg->hz_connectfd = 0;
 		}
 
 	}	
@@ -374,10 +377,27 @@ SO_RCVTIMEO和SO_SNDTIMEO ，它们分别用来设置socket接收数据超时时
 其中connect超时的话，也是返回-1, 但errno设置为EINPROGRESS
 				*/
 				struct timeval tv_out;
-				tv_out.tv_sec  = 60; //6s will timeout    //recv timeout
-				tv_out.tv_usec = 0; 
-				//填充这个结构后，我们就可以以如下的方式调用这个函数：				
-				setsockopt(connectfd, SOL_SOCKET, SO_RCVTIMEO, &tv_out, sizeof(tv_out));//(具体参数可以man一下，或查看MSDN)
+				if ( thread_arg->recv_timeout > 0 )
+				{
+					tv_out.tv_sec  = thread_arg->recv_timeout; //6s will timeout    //recv timeout
+					tv_out.tv_usec = 0; 
+					//(具体参数可以man一下，或查看MSDN)
+					//填充这个结构后，我们就可以以如下的方式调用这个函数：
+					setsockopt(connectfd, SOL_SOCKET, SO_RCVTIMEO, &tv_out, sizeof(tv_out));
+
+				}else if ( thread_arg->recv_timeout < 0 )  //do not set time out
+				{
+					
+				}else  //default  60 s
+				{
+					tv_out.tv_sec  = 60; //6s will timeout    //recv timeout
+					tv_out.tv_usec = 0; 
+					thread_arg->recv_timeout = 60 ;
+					//(具体参数可以man一下，或查看MSDN)
+					//填充这个结构后，我们就可以以如下的方式调用这个函数：
+					setsockopt(connectfd, SOL_SOCKET, SO_RCVTIMEO, &tv_out, sizeof(tv_out));
+				}								
+				lt_info("recv timeout =%d",thread_arg->recv_timeout);
 
 				lt_info("Yougot a connection from cient's ip is %s, prot is %d\n",inet_ntoa(client.sin_addr),htons(client.sin_port));  
 				//casx = CASX_STEP_00 ;
@@ -485,6 +505,8 @@ void * socket_tcp_c_creat(void * arg)
 	s32 casx=CASX_INIT;
 	pthread_detach(pthread_self());
 
+	u32 connect_try=0;
+
 	
 	while(casx)
 	{
@@ -509,22 +531,29 @@ void * socket_tcp_c_creat(void * arg)
 
 
 				
- 
+ 				connect_try = 0;
 				 /* 客户程序发起连接请求 */ 
 				while(1)
-				{
-					lt_info("try connect server");
+				{					
+					if ( connect_try % (3600/2) == 0 )
+					{
+						lt_info("try connect server");
+					}
 					int err_log = connect(connectfd, (struct sockaddr*)&server, sizeof(server));      // 主动连接服务器  
 					if(err_log != 0)  
 					{  
-						lt_error("Connect Error:%s\n",strerror(errno) );
+						if ( connect_try % (3600/2) == 0 )
+						{
+							lt_error("Connect Error:%s\n",strerror(errno) );
+						}
 						//close(sockfd);  
 						//exit(-1);  
 						lt_sleep(2);
 					}else
 					{
 						break;
-					}					
+					}			
+					connect_try ++;		
 				}
 				/*
 
@@ -537,10 +566,28 @@ void * socket_tcp_c_creat(void * arg)
 				这里第一个域的单位为秒，第二个域的单位为微秒。
 				*/
 				struct timeval tv_out;
-				tv_out.tv_sec  = 60; //60s will timeout  //recv timeout
-				tv_out.tv_usec = 0;
-				//填充这个结构后，我们就可以以如下的方式调用这个函数：				
-				setsockopt(connectfd, SOL_SOCKET, SO_RCVTIMEO, &tv_out, sizeof(tv_out));//(具体参数可以man一下，或查看MSDN)
+				if ( thread_arg->recv_timeout > 0 )
+				{
+					tv_out.tv_sec  = thread_arg->recv_timeout; //6s will timeout    //recv timeout
+					tv_out.tv_usec = 0; 
+					//(具体参数可以man一下，或查看MSDN)
+					//填充这个结构后，我们就可以以如下的方式调用这个函数：
+					setsockopt(connectfd, SOL_SOCKET, SO_RCVTIMEO, &tv_out, sizeof(tv_out));
+
+				}else if ( thread_arg->recv_timeout < 0 )  //do not set time out
+				{
+					
+				}else  //default  60 s
+				{
+					tv_out.tv_sec  = 60; //6s will timeout    //recv timeout
+					tv_out.tv_usec = 0; 
+					thread_arg->recv_timeout = 60 ;
+					//(具体参数可以man一下，或查看MSDN)
+					//填充这个结构后，我们就可以以如下的方式调用这个函数：
+					setsockopt(connectfd, SOL_SOCKET, SO_RCVTIMEO, &tv_out, sizeof(tv_out));
+				}								
+				lt_info("recv timeout =%d",thread_arg->recv_timeout);
+
 
 				lt_info("Yougot a connection from server's ip is %s, prot is %d\n",inet_ntoa(server.sin_addr),htons(server.sin_port));  
 				//casx = CASX_STEP_00 ;

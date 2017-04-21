@@ -75,23 +75,64 @@ hz_ret_t hz_memdump(d8 *buf,s32 length)
 	s32 i=0;
 	hz_ret_t ret = RET_SUCCESS ;
 	lt_info("dump buf=%p length=%d",buf,length) ;
-
+	hz_log_lock();
 	if ( buf != NULL && length > 0  )
 	{
 		for(;i< length;i++)
 		{
 			hzprintf("%02x ",(u8)*(buf+i) );
-			if ( i % 10 == 9 ) hzprintf("\n");
+			if ( i % 30 == 29 ) hzprintf("\n");
 		}
 		hzprintf("\n");		
 	}else
 	{
 		ret = RET_ERR_MEMDUMP;
 	}
-
-
+	hz_log_unlock();
 
 	lt_info("dump done") ;
+	return 0 - ret;
+}
+
+
+/**
+*/
+hz_ret_t hz_mem2str(hz_mem_str_o * mem_str)  //抽时间统一整理成面向对象格式
+{
+	hz_ret_t ret = RET_SUCCESS ;
+	int i=0;
+	if ( (mem_str->src_buf == NULL) ||  (mem_str->dest_buf == NULL)  || (mem_str->length > 4096) )
+	{
+		ret = RET_FAIL;		
+	}else
+	{
+		for( i=0;i<mem_str->length;i++ )
+		{
+			hzsprintf(mem_str->dest_buf+i*2,"%02x",(u8)mem_str->src_buf[i]);
+		}
+		mem_str->dest_buf[i*2]=0;
+	}
+	return 0 - ret;
+}
+
+/**
+*/
+hz_ret_t hz_str2mem(hz_mem_str_o * mem_str)  //抽时间统一整理成面向对象格式
+{
+	hz_ret_t ret = RET_SUCCESS ;
+	d8 tmp_buf[10];
+	int i=0;
+	if ( ( mem_str->src_buf == NULL ) ||  ( mem_str->dest_buf == NULL )  || ( mem_str->length > 4096 ) )
+	{
+		ret = RET_FAIL;		
+	}else
+	{
+		for( i=0 ; i < mem_str->length ; i=i+2 )
+		{
+			hzsnprintf(tmp_buf,3,"%s",&mem_str->src_buf[i]);
+			mem_str->dest_buf[i/2]=(u8)strtol(tmp_buf,NULL,16);
+		}
+	}
 	return 0 - ret;
 }
 

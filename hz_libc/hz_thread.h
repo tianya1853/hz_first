@@ -39,7 +39,9 @@ typedef struct _hz_thread_t_
 typedef struct _hz_mutex_t_ 
 {   
 	int sum;  
-	pthread_mutex_t lock;  
+	pthread_mutex_t lock;
+	s32 flag;//1 inited ; 0 uninit
+	d8 name[16];
 }hz_mutex_t;
 
 typedef struct _hz_mutexattr_t_ 

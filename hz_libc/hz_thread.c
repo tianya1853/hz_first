@@ -23,18 +23,35 @@ Description:
   
 s32 hz_mutex_init(hz_mutex_t *mutex,const hz_mutexattr_t *attr)
 {
+	mutex->flag = 1;
 	return pthread_mutex_init(&(mutex->lock),NULL);
 }
 
 
 s32 hz_mutex_lock(hz_mutex_t *mutex)
 {
-	return pthread_mutex_lock(&(mutex->lock));
+	if ( mutex->flag == 1 )
+	{
+		return pthread_mutex_lock(&(mutex->lock));
+	}else
+	{
+		//lt_warn("uninit mutex");  can not use lt_warn , had used hz_mutex_lock & hz_mutex_unlock  in lt_warn
+		hzprintf("warning:uninit mutex %s\n",mutex->name);
+		return 0;
+	}
 }
 
 s32 hz_mutex_unlock(hz_mutex_t *mutex)
 {
-	return pthread_mutex_unlock(&(mutex->lock));
+	if ( mutex->flag == 1 )
+	{
+		return pthread_mutex_unlock(&(mutex->lock));
+	}else
+	{
+		//lt_warn("uninit mutex"); can not use lt_warn , had used hz_mutex_lock & hz_mutex_unlock  in lt_warn
+		hzprintf("warning:uninit mutex %s\n",mutex->name);
+		return 0;
+	}	
 }
 
 

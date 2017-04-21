@@ -25,7 +25,8 @@ Description:
 //#define TEST_MODE  1
 
 extern hz_mutex_t mutex_print;
-
+#define hz_log_lock() hz_mutex_lock(&mutex_print)
+#define hz_log_unlock() hz_mutex_unlock(&mutex_print)
 typedef enum 
 {
 	LT_ERROR,
@@ -36,8 +37,8 @@ typedef enum
 
 
 s32 hzprintf(char *fmt, ...);
-
-
+#define hzsprintf sprintf
+#define hzsnprintf snprintf
 extern int lt_runtime(lt_time_t *lt_time,s32 printtime);
 
 #if 0

@@ -45,8 +45,11 @@ typedef struct
 	struct  sockaddr_in client;
 	u32 flag;//1:server  0:client
 	u32 disconnect;//0:reconnect  others:not reconnect
-	u32 userdata[16];
+	s32 recv_timeout; // 0:default 60s   <0:do not set time out  >0:set  recv_timeout s timeout
+	void* userdata[16];
+	hz_mutex_t *usermutex[4];
 	FILE *logfile_fp;
+	
 }socket_creat_arg_t;
 
 
