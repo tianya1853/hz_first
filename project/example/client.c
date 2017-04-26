@@ -109,6 +109,8 @@ int main (int argc,char **argv)
 	d8 log_file[100];
 
 	sprintf(log_file,"%s.log",argv[0]);
+
+	//first print "warning:uninit mutex lt_log",is normal
 	hz_log_init(0,".",log_file );
 
 

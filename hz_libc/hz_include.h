@@ -48,6 +48,13 @@ sqlite3
 #include "sqlite3.h"
 
 
+/**
+flock
+*/
+#include <sys/file.h>
+
+
+
 #include "hz_type.h"
 #include "hz_log.h"
 #include "hz_string.h"
@@ -56,6 +63,6 @@ sqlite3
 #include "hz_memory.h"
 #include "hz_thread.h"
 #include "hz_sqlite.h"
-
+#include "hz_semaphore.h"
 
 #endif /* !__TYPE_H__ */

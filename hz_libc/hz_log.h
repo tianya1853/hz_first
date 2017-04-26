@@ -39,6 +39,12 @@ typedef enum
 s32 hzprintf(char *fmt, ...);
 #define hzsprintf sprintf
 #define hzsnprintf snprintf
+
+#define hz_sprintf hzsprintf
+#define hz_printf hzprintf
+#define hz_snprintf hzsnprintf
+
+
 extern int lt_runtime(lt_time_t *lt_time,s32 printtime);
 
 #if 0

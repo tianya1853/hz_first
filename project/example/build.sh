@@ -4,7 +4,7 @@ PATH_TOP=../..
 
 
 if [ $1'x' == 'cleanx' ];then
-	rm *.log *.tar.gz  client server test_sqlite
+	rm *.log *.tar.gz  client server rm *~
 	exit 0
 fi
 	

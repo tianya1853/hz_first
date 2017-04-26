@@ -120,3 +120,105 @@ hz_ret_t module_function(s8 * arg1,u32 arg2)
 
 
 
+
+
+
+
+
+
+
+
+/**
+module函数功能描述
+@param arg1 arg2描述  
+@param arg2 arg2描述
+@return 返回值描述
+*/
+hz_ret_o module_obj(hz_object *obj)
+{
+	hz_ret_o ret;
+	ret.v = RET_SUCCESS;
+
+	hz_tmp_o tmp;
+	tmp.casx=CASX_INIT;
+
+	do
+	{
+	}while(0);
+
+	while( tmp.casx )
+	{
+		switch(tmp.casx)
+		{
+		case CASX_INIT:
+			{
+			}
+			tmp.casx = CASX_STEP_00 ;
+			break;
+		case CASX_STEP_00:
+			{				
+			}
+			tmp.casx = CASX_STEP_01 ;
+			break;
+		case CASX_STEP_01:
+			{
+			}
+			tmp.casx = CASX_STEP_02 ;
+			break;
+		case CASX_STEP_02:
+			{
+			}
+			tmp.casx = CASX_STEP_03 ;
+			break;
+		case CASX_STEP_03:
+			{
+			}
+			tmp.casx = CASX_STEP_04 ;
+			break;
+		case CASX_STEP_04:
+			{
+			}
+			tmp.casx = CASX_STEP_05 ;
+			break;
+		case CASX_STEP_05:
+			{
+			}
+			tmp.casx = CASX_FREE_MEM ;
+			break;
+		case CASX_LOOP_00:
+			{
+			}
+			tmp.casx = CASX_LOOP_00 ;
+			break;
+		case CASX_LOOP_01:
+			{
+			}
+			tmp.casx = CASX_LOOP_01 ;
+			break;
+		case CASX_FREE_MEM:
+			{			
+			}
+			tmp.casx = CASX_CLOSE_FILE ;
+			break;
+		case CASX_CLOSE_FILE:
+			{
+			}
+			tmp.casx = CASX_EXIT ;
+			break;
+		case CASX_HELP:
+			{
+			}
+			tmp.casx = CASX_EXIT ;
+			break;
+		default:
+			{
+				tmp.casx = CASX_EXIT ;
+				break;
+			}
+		}
+	}
+	ret.v=0-ret.v;
+	return ret;	
+}
+
+

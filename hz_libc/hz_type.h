@@ -138,6 +138,9 @@ typedef struct
 	s32 v;//value
 	void *vp;
 	void *action;
+	s32 v_in;
+	s32 v_out;
+	s32 v_inout;
 }hz_object;
 
 void hz_tmp_o_init(hz_tmp_o *hz_tmp);
