@@ -45,8 +45,9 @@ system()
 /**
 sqlite3
 */
-#include "sqlite3.h"
-
+#ifndef HZ_LIBC_NO_SQLITE
+	#include "sqlite3.h"
+#endif
 
 /**
 flock
@@ -62,7 +63,11 @@ flock
 #include "hz_socket.h"
 #include "hz_memory.h"
 #include "hz_thread.h"
-#include "hz_sqlite.h"
+
+#ifndef HZ_LIBC_NO_SQLITE
+	#include "hz_sqlite.h"
+#endif
+
 #include "hz_semaphore.h"
 
 #endif /* !__TYPE_H__ */

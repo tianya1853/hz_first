@@ -23,7 +23,8 @@ Description:
 return:SUCCESS/FAIL
 */
 s32 file_exist(d8 *filename);
-
+s32 file_touch(d8 *filename);
+s32 file_remove(d8 *filename);
 s32 shell_cmd(d8 *cmd,d8*retbuf,s32 buflen_max);
 
 

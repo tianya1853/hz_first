@@ -136,12 +136,9 @@ module函数功能描述
 */
 hz_ret_o module_obj(hz_object *obj)
 {
-	hz_ret_o ret;
-	ret.v = RET_SUCCESS;
-
 	hz_tmp_o tmp;
 	tmp.casx=CASX_INIT;
-
+	tmp.ret.v = RET_SUCCESS;
 	do
 	{
 	}while(0);
@@ -217,7 +214,7 @@ hz_ret_o module_obj(hz_object *obj)
 			}
 		}
 	}
-	ret.v=0-ret.v;
+	tmp.ret.v=0-tmp.ret.v;
 	return ret;	
 }
 

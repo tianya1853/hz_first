@@ -7,3 +7,6 @@ git reset .
 
 git push origin master
 git pull origin master
+
+
+dont use software link in git
