@@ -1,0 +1,1148 @@
+warning:uninit mutex lt_log
+[20170505162007:112133s.647845121ns][test_sqlite.c][main][line_596]<"warn":warning test
+[20170505162007:112133s.649440819ns][../../hz_libc/hz_sqlite.c][hz_db_create_table][line_205]<"info":creat table file if file not exist
+[20170505162007:112133s.651746453ns][../../hz_libc/hz_sqlite.c][hz_db_create_table][line_232]<"info":will creat table sql=CREATE TABLE test_t1(id integer PRIMARY KEY not null,time_input     TEXT,time_output    TEXT,info           TEXT,reserve1       TEXT,reserve2       TEXT,reserve3       TEXT);
+[20170505162007:112133s.674971192ns][../../hz_libc/hz_sqlite.c][hz_db_exec][line_318]<"debug":will exec table sql=INSERT INTO test_t1 (id,time_input,time_output,info) VALUES (null, '20170327', 'null','jasmine'); 
+[20170505162007:112133s.687540381ns][../../hz_libc/hz_sqlite.c][hz_db_exec][line_318]<"debug":will exec table sql=INSERT INTO test_t1 (id,time_input,time_output,info) VALUES (null, '20170327', 'null','jasmine2'); 
+[20170505162007:112133s.700227495ns][../../hz_libc/hz_sqlite.c][hz_db_exec][line_318]<"debug":will exec table sql=INSERT INTO test_t1 (id,time_input,time_output,info) VALUES (null, '20170327', 'null','jasmine2'); 
+[20170505162007:112133s.715968915ns][test_sqlite.c][main][line_644]<"info":********************* search all
+[20170505162007:112133s.718031368ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 1
+
+[20170505162007:112133s.719508817ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170505162007:112133s.721045691ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170505162007:112133s.722506760ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine
+
+[20170505162007:112133s.723972905ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170505162007:112133s.725498222ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170505162007:112133s.726960551ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170505162007:112133s.728524557ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 2
+
+[20170505162007:112133s.729998802ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170505162007:112133s.731468535ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170505162007:112133s.733008348ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine2
+
+[20170505162007:112133s.734481033ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170505162007:112133s.735950106ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170505162007:112133s.737484327ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170505162007:112133s.738980832ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 3
+
+[20170505162007:112133s.740514070ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170505162007:112133s.741984559ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170505162007:112133s.743458000ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine2
+
+[20170505162007:112133s.744999877ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170505162007:112133s.746464882ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170505162007:112133s.747930391ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170505162007:112133s.749527565ns][test_sqlite.c][main][line_646]<"info":********************* search id 1
+[20170505162007:112133s.751371304ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 1
+
+[20170505162007:112133s.752916950ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170505162007:112133s.754430063ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170505162007:112133s.755913884ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine
+
+[20170505162007:112133s.757473486ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170505162007:112133s.758938034ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170505162007:112133s.760459644ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170505162007:112133s.761989197ns][test_sqlite.c][main][line_648]<"info":********************* search id 2
+[20170505162007:112133s.763814012ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 2
+
+[20170505162007:112133s.765360018ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170505162007:112133s.766832079ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170505162007:112133s.768337896ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine2
+
+[20170505162007:112133s.769829469ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170505162007:112133s.771291798ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170505162007:112133s.772835799ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170505162007:112133s.774356281ns][test_sqlite.c][main][line_650]<"info":********************* search id max
+[20170505162008:112133s.776380909ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 3
+
+[20170505162008:112133s.777937894ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170505162008:112133s.779406187ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170505162008:112133s.780866980ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine2
+
+[20170505162008:112133s.782128308ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170505162008:112133s.783382964ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170505162008:112133s.784702180ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170505162008:112133s.786013824ns][test_sqlite.c][main][line_652]<"info":********************* delete id 2
+[20170505162008:112133s.803795977ns][test_sqlite.c][main][line_655]<"info":********************* search all
+[20170505162008:112133s.805590036ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 1
+
+[20170505162008:112133s.806884904ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170505162008:112133s.808224364ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170505162008:112133s.809518476ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine
+
+[20170505162008:112133s.810821671ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170505162008:112133s.812183368ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170505162008:112133s.813532380ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170505162008:112133s.814684903ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 3
+
+[20170505162008:112133s.815811482ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170505162008:112133s.817052757ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170505162008:112133s.818166724ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine2
+
+[20170505162008:112133s.819315491ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170505162008:112133s.820478755ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170505162008:112133s.821579497ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170505162008:112133s.822738980ns][test_sqlite.c][main][line_657]<"info":********************* delete id max
+[20170505162008:112133s.844818695ns][test_sqlite.c][main][line_659]<"info":********************* search all
+[20170505162008:112133s.846362325ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 1
+
+[20170505162008:112133s.847494231ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170505162008:112133s.848862396ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170505162008:112133s.850224344ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine
+
+[20170505162008:112133s.851694281ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170505162008:112133s.853236795ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170505162008:112133s.854702472ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170505162008:112133s.856309713ns][test_sqlite.c][main][line_661]<"info":********************* delete all
+[20170505162008:112133s.880363225ns][test_sqlite.c][main][line_663]<"info":********************* search all
+[20170505162008:112133s.882357433ns][../../hz_libc/hz_sqlite.c][hz_db_exec][line_318]<"debug":will exec table sql=if NOT exists(SELECT * FROM Setting WHERE ID=0) INSERT INTO test_t1 (id,time_input,time_output,info) VALUES (0, '20170327', 'null','jasmine'); 
+[20170505162008:112133s.883882810ns][../../hz_libc/hz_sqlite.c][hz_db_exec][line_322]<"error":table exec failed  errmsg=near "if": syntax error
+
+[20170505162008:112133s.885454040ns][../../hz_libc/hz_sqlite.c][hz_db_exec][line_318]<"debug":will exec table sql=INSERT INTO test_t1 (id,time_input,time_output,info) VALUES (0, '20170327', 'null','jasmine'); 
+warning:uninit mutex lt_log
+[20170505162036:112162s.763670481ns][test_sqlite.c][main][line_596]<"warn":warning test
+[20170505162036:112162s.765440636ns][../../hz_libc/hz_sqlite.c][hz_db_create_table][line_205]<"info":creat table file if file not exist
+[20170505162036:112162s.767088294ns][../../hz_libc/hz_sqlite.c][hz_db_create_table][line_210]<"info":file data3.db exist 
+[20170505162036:112162s.769553266ns][../../hz_libc/hz_sqlite.c][hz_db_exec][line_318]<"debug":will exec table sql=INSERT INTO test_t1 (id,time_input,time_output,info) VALUES (null, '20170327', 'null','jasmine'); 
+[20170505162037:112162s.789966557ns][../../hz_libc/hz_sqlite.c][hz_db_exec][line_318]<"debug":will exec table sql=INSERT INTO test_t1 (id,time_input,time_output,info) VALUES (null, '20170327', 'null','jasmine2'); 
+[20170505162037:112162s.813181662ns][../../hz_libc/hz_sqlite.c][hz_db_exec][line_318]<"debug":will exec table sql=INSERT INTO test_t1 (id,time_input,time_output,info) VALUES (null, '20170327', 'null','jasmine2'); 
+[20170505162037:112162s.836150837ns][test_sqlite.c][main][line_644]<"info":********************* search all
+[20170505162037:112162s.838277454ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 0
+
+[20170505162037:112162s.839903741ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170505162037:112162s.841598223ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170505162037:112162s.843197077ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine
+
+[20170505162037:112162s.844857732ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170505162037:112162s.846488338ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170505162037:112162s.848115008ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170505162037:112162s.849754518ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 1
+
+[20170505162037:112162s.851344468ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170505162037:112162s.852997562ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170505162037:112162s.854578008ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine
+
+[20170505162037:112162s.856220614ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170505162037:112162s.857938377ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170505162037:112162s.859527091ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170505162037:112162s.861200910ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 2
+
+[20170505162037:112162s.862777131ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170505162037:112162s.864408110ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170505162037:112162s.865986168ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine2
+
+[20170505162037:112162s.867570154ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170505162037:112162s.869206448ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170505162037:112162s.870787409ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170505162037:112162s.872460352ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 3
+
+[20170505162037:112162s.874055774ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170505162037:112162s.876324508ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170505162037:112162s.881850771ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine2
+
+[20170505162037:112162s.883391724ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170505162037:112162s.884901694ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170505162037:112162s.886226550ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170505162037:112162s.887648198ns][test_sqlite.c][main][line_646]<"info":********************* search id 1
+[20170505162037:112162s.889501046ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 1
+
+[20170505162037:112162s.890872739ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170505162037:112162s.892261279ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170505162037:112162s.893622568ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine
+
+[20170505162037:112162s.894955824ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170505162037:112162s.896380017ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170505162037:112162s.897463000ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170505162037:112162s.898674299ns][test_sqlite.c][main][line_648]<"info":********************* search id 2
+[20170505162037:112162s.900215193ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 2
+
+[20170505162037:112162s.901407988ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170505162037:112162s.902606208ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170505162037:112162s.903800611ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine2
+
+[20170505162037:112162s.904903502ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170505162037:112162s.905971125ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170505162037:112162s.907036563ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170505162037:112162s.908262347ns][test_sqlite.c][main][line_650]<"info":********************* search id max
+[20170505162037:112162s.909682580ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 3
+
+[20170505162037:112162s.910634810ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170505162037:112162s.911563496ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170505162037:112162s.912528278ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine2
+
+[20170505162037:112162s.913444124ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170505162037:112162s.914371213ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170505162037:112162s.915291655ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170505162037:112162s.916293385ns][test_sqlite.c][main][line_652]<"info":********************* delete id 2
+[20170505162037:112162s.927824785ns][test_sqlite.c][main][line_655]<"info":********************* search all
+[20170505162037:112162s.929059689ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 0
+
+[20170505162037:112162s.929880758ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170505162037:112162s.930764480ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170505162037:112162s.931607281ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine
+
+[20170505162037:112162s.932482362ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170505162037:112162s.933328392ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170505162037:112162s.934186073ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170505162037:112162s.935044942ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 1
+
+[20170505162037:112162s.935896324ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170505162037:112162s.936789393ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170505162037:112162s.937647471ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine
+
+[20170505162037:112162s.938501372ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170505162037:112162s.939350593ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170505162037:112162s.940244851ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170505162037:112162s.941030543ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 3
+
+[20170505162037:112162s.941803636ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170505162037:112162s.942577689ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170505162037:112162s.943336958ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine2
+
+[20170505162037:112162s.944129131ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170505162037:112162s.944935044ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170505162037:112162s.945704165ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170505162037:112162s.946499602ns][test_sqlite.c][main][line_657]<"info":********************* delete id max
+[20170505162037:112162s.956148094ns][test_sqlite.c][main][line_659]<"info":********************* search all
+[20170505162037:112162s.957119788ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 0
+
+[20170505162037:112162s.957842084ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170505162037:112162s.958578133ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170505162037:112162s.959297957ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine
+
+[20170505162037:112162s.960034546ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170505162037:112162s.960756063ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170505162037:112162s.961469431ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170505162037:112162s.962188752ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 1
+
+[20170505162037:112162s.962910340ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170505162037:112162s.963605804ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170505162037:112162s.964343917ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine
+
+[20170505162037:112162s.965005013ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170505162037:112162s.965672877ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170505162037:112162s.966339710ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170505162037:112162s.967033686ns][test_sqlite.c][main][line_661]<"info":********************* delete all
+[20170505162037:112162s.975930541ns][test_sqlite.c][main][line_663]<"info":********************* search all
+[20170505162037:112162s.976841635ns][../../hz_libc/hz_sqlite.c][hz_db_exec][line_318]<"debug":will exec table sql=if NOT exists(SELECT * FROM Setting WHERE ID=0) INSERT INTO test_t1 (id,time_input,time_output,info) VALUES (0, '20170327', 'null','jasmine'); 
+[20170505162037:112162s.977488931ns][../../hz_libc/hz_sqlite.c][hz_db_exec][line_322]<"error":table exec failed  errmsg=near "if": syntax error
+
+[20170505162037:112162s.978112527ns][../../hz_libc/hz_sqlite.c][hz_db_exec][line_318]<"debug":will exec table sql=INSERT INTO test_t1 (id,time_input,time_output,info) VALUES (0, '20170327', 'null','jasmine'); 
+warning:uninit mutex lt_log
+[20170505162814:112620s.025183620ns][test_sqlite.c][main][line_596]<"warn":warning test
+[20170505162814:112620s.026766960ns][../../hz_libc/hz_sqlite.c][hz_db_create_table][line_205]<"info":creat table file if file not exist
+[20170505162814:112620s.028439448ns][../../hz_libc/hz_sqlite.c][hz_db_create_table][line_210]<"info":file data3.db exist 
+[20170505162814:112620s.030762738ns][../../hz_libc/hz_sqlite.c][hz_db_exec][line_318]<"debug":will exec table sql=INSERT INTO test_t1 (id,time_input,time_output,info) VALUES (null, '20170327', 'null','jasmine'); 
+[20170505162814:112620s.052114090ns][../../hz_libc/hz_sqlite.c][hz_db_exec][line_318]<"debug":will exec table sql=INSERT INTO test_t1 (id,time_input,time_output,info) VALUES (null, '20170327', 'null','jasmine2'); 
+[20170505162814:112620s.074173160ns][../../hz_libc/hz_sqlite.c][hz_db_exec][line_318]<"debug":will exec table sql=INSERT INTO test_t1 (id,time_input,time_output,info) VALUES (null, '20170327', 'null','jasmine2'); 
+[20170505162814:112620s.094848715ns][test_sqlite.c][main][line_644]<"info":********************* search all
+[20170505162814:112620s.096885971ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 0
+
+[20170505162814:112620s.098240313ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170505162814:112620s.099598183ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170505162814:112620s.100957961ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine
+
+[20170505162814:112620s.104112425ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170505162814:112620s.105714569ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170505162814:112620s.107299997ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170505162814:112620s.109785348ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 1
+
+[20170505162814:112620s.111404388ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170505162814:112620s.113085456ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170505162814:112620s.114621120ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine
+
+[20170505162814:112620s.116227992ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170505162814:112620s.117884160ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170505162814:112620s.119422560ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170505162814:112620s.121072788ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 2
+
+[20170505162814:112620s.122606412ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170505162814:112620s.124208196ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170505162814:112620s.125541778ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine2
+
+[20170505162814:112620s.126858128ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170505162814:112620s.128223294ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170505162814:112620s.129538156ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170505162814:112620s.130867370ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 3
+
+[20170505162814:112620s.132223392ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170505162814:112620s.133527646ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170505162814:112620s.134816815ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine2
+
+[20170505162814:112620s.136156145ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170505162814:112620s.137329214ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170505162814:112620s.138503711ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170505162814:112620s.139731608ns][test_sqlite.c][main][line_646]<"info":********************* search id 1
+[20170505162814:112620s.141256676ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 1
+
+[20170505162814:112620s.142418729ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170505162814:112620s.143580601ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170505162814:112620s.144783538ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine
+
+[20170505162814:112620s.145942507ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170505162814:112620s.147130888ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170505162814:112620s.148334437ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170505162814:112620s.149407389ns][test_sqlite.c][main][line_648]<"info":********************* search id 2
+[20170505162814:112620s.150709807ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 2
+
+[20170505162814:112620s.151745679ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170505162814:112620s.152833511ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170505162814:112620s.153854574ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine2
+
+[20170505162814:112620s.154886786ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170505162814:112620s.155913394ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170505162814:112620s.156970014ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170505162814:112620s.158047382ns][test_sqlite.c][main][line_650]<"info":********************* search id max
+[20170505162814:112620s.159463801ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 3
+
+[20170505162814:112620s.160504568ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170505162814:112620s.161394111ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170505162814:112620s.162299398ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine2
+
+[20170505162814:112620s.163225937ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170505162814:112620s.164172144ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170505162814:112620s.165122587ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170505162814:112620s.166110842ns][test_sqlite.c][main][line_652]<"info":********************* delete id 2
+[20170505162814:112620s.189981686ns][test_sqlite.c][main][line_655]<"info":********************* search all
+[20170505162814:112620s.191306952ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 0
+
+[20170505162814:112620s.192751487ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170505162814:112620s.193690122ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170505162814:112620s.194619937ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine
+
+[20170505162814:112620s.195533648ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170505162814:112620s.196491411ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170505162814:112620s.197424118ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170505162814:112620s.198636175ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 1
+
+[20170505162814:112620s.201246614ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170505162814:112620s.202771250ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170505162814:112620s.204311317ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine
+
+[20170505162814:112620s.205082383ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170505162814:112620s.205850305ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170505162814:112620s.206611051ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170505162814:112620s.207422869ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 3
+
+[20170505162814:112620s.208207027ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170505162814:112620s.208973053ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170505162814:112620s.209731410ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine2
+
+[20170505162814:112620s.210522900ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170505162814:112620s.211296954ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170505162814:112620s.212101380ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170505162814:112620s.212916498ns][test_sqlite.c][main][line_657]<"info":********************* delete id max
+[20170505162814:112620s.234754478ns][test_sqlite.c][main][line_659]<"info":********************* search all
+[20170505162814:112620s.235822486ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 0
+
+[20170505162814:112620s.237104180ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170505162814:112620s.238629475ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170505162814:112620s.240208135ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine
+
+[20170505162814:112620s.241739671ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170505162814:112620s.243249234ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170505162814:112620s.244813986ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170505162814:112620s.246152080ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 1
+
+[20170505162814:112620s.247668627ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170505162814:112620s.249266055ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170505162814:112620s.250784319ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine
+
+[20170505162814:112620s.252360891ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170505162814:112620s.253880258ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170505162814:112620s.255400789ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170505162814:112620s.257061626ns][test_sqlite.c][main][line_661]<"info":********************* delete all
+[20170505162814:112620s.274919932ns][test_sqlite.c][main][line_663]<"info":********************* search all
+[20170505162814:112620s.277137585ns][test_sqlite.c][main][line_672]<"info":********************* insert id 0
+[20170505162814:112620s.279085403ns][../../hz_libc/hz_sqlite.c][hz_db_exec][line_318]<"debug":will exec table sql=INSERT INTO test_t1 (id,time_input,time_output,info) VALUES (0, '20170327', 'null','jasmine'); 
+[20170505162814:112620s.291696538ns][test_sqlite.c][main][line_681]<"info":********************* exists test
+[20170505162814:112620s.293224077ns][../../hz_libc/hz_sqlite.c][hz_db_exec][line_318]<"debug":will exec table sql=INSERT INTO test_t1 (id,time_input,time_output,info) VALUES (0, '20170327', 'null','jasmine') select id where not exists ( select * FROM test_t1 where id = 0); 
+[20170505162814:112620s.294779061ns][../../hz_libc/hz_sqlite.c][hz_db_exec][line_322]<"error":table exec failed  errmsg=near "select": syntax error
+
+warning:uninit mutex lt_log
+[20170506091617:820s.538471158ns][test_sqlite.c][main][line_596]<"warn":warning test
+[20170506091617:820s.540077346ns][../../hz_libc/hz_sqlite.c][hz_db_create_table][line_205]<"info":creat table file if file not exist
+[20170506091617:820s.541678927ns][../../hz_libc/hz_sqlite.c][hz_db_create_table][line_210]<"info":file data3.db exist 
+[20170506091617:820s.543988339ns][../../hz_libc/hz_sqlite.c][hz_db_exec][line_318]<"debug":will exec table sql=INSERT INTO test_t1 (id,time_input,time_output,info) VALUES (null, '20170327', 'null','jasmine'); 
+[20170506091617:820s.566584899ns][../../hz_libc/hz_sqlite.c][hz_db_exec][line_318]<"debug":will exec table sql=INSERT INTO test_t1 (id,time_input,time_output,info) VALUES (null, '20170327', 'null','jasmine2'); 
+[20170506091617:820s.581798024ns][../../hz_libc/hz_sqlite.c][hz_db_exec][line_318]<"debug":will exec table sql=INSERT INTO test_t1 (id,time_input,time_output,info) VALUES (null, '20170327', 'null','jasmine2'); 
+[20170506091617:820s.596879245ns][test_sqlite.c][main][line_644]<"info":********************* search all
+[20170506091617:820s.598829617ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 0
+
+[20170506091617:820s.600388418ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170506091617:820s.601840886ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170506091617:820s.603302643ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine
+
+[20170506091617:820s.604840899ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170506091617:820s.606296704ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170506091617:820s.607788040ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170506091617:820s.609182777ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 1
+
+[20170506091617:820s.610434893ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170506091617:820s.611687886ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170506091617:820s.613006422ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine
+
+[20170506091617:820s.614254075ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170506091617:820s.615506731ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170506091617:820s.616819675ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170506091617:820s.618113516ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 2
+
+[20170506091617:820s.619367384ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170506091617:820s.621533505ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170506091617:820s.622664313ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine2
+
+[20170506091617:820s.623773570ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170506091617:820s.624982582ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170506091617:820s.626080618ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170506091617:820s.627207599ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 3
+
+[20170506091617:820s.628369535ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170506091617:820s.629467332ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170506091617:820s.630562212ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine2
+
+[20170506091617:820s.631649712ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170506091617:820s.632716861ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170506091617:820s.633716533ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170506091617:820s.634745233ns][test_sqlite.c][main][line_646]<"info":********************* search id 1
+[20170506091617:820s.636050078ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 1
+
+[20170506091617:820s.637046390ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170506091617:820s.638018486ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170506091617:820s.639003891ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine
+
+[20170506091617:820s.639965259ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170506091617:820s.640988715ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170506091617:820s.641951560ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170506091617:820s.642965956ns][test_sqlite.c][main][line_648]<"info":********************* search id 2
+[20170506091617:820s.644241844ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 2
+
+[20170506091617:820s.645256073ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170506091617:820s.646125713ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170506091617:820s.646996145ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine2
+
+[20170506091617:820s.647875626ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170506091617:820s.648798342ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170506091617:820s.649675314ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170506091617:820s.650596014ns][test_sqlite.c][main][line_650]<"info":********************* search id max
+[20170506091617:820s.651798439ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 3
+
+[20170506091617:820s.652729543ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170506091617:820s.653608963ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170506091617:820s.654483392ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine2
+
+[20170506091617:820s.655363820ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170506091617:820s.656294072ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170506091617:820s.657091245ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170506091617:820s.657929793ns][test_sqlite.c][main][line_652]<"info":********************* delete id 2
+[20170506091617:820s.671405197ns][test_sqlite.c][main][line_655]<"info":********************* search all
+[20170506091617:820s.672612122ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 0
+
+[20170506091617:820s.673438370ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170506091617:820s.674244662ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170506091617:820s.675039434ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine
+
+[20170506091617:820s.675838191ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170506091617:820s.676689315ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170506091617:820s.677487063ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170506091617:820s.678294340ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 1
+
+[20170506091617:820s.679122688ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170506091617:820s.679918768ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170506091617:820s.680750836ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine
+
+[20170506091617:820s.681572165ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170506091617:820s.682376141ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170506091617:820s.683169869ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170506091617:820s.683981045ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 3
+
+[20170506091617:820s.684871638ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170506091617:820s.685605786ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170506091617:820s.686327538ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine2
+
+[20170506091617:820s.687054630ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170506091617:820s.687785179ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170506091617:820s.688560499ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170506091617:820s.689325283ns][test_sqlite.c][main][line_657]<"info":********************* delete id max
+[20170506091617:820s.708418729ns][test_sqlite.c][main][line_659]<"info":********************* search all
+[20170506091617:820s.709526234ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 0
+
+[20170506091617:820s.710330798ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170506091617:820s.711120710ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170506091617:820s.711917355ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine
+
+[20170506091617:820s.712761051ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170506091617:820s.713550771ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170506091617:820s.714341835ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170506091617:820s.715151572ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 1
+
+[20170506091617:820s.715960732ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170506091617:820s.716801908ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170506091617:820s.717598840ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine
+
+[20170506091617:820s.718394921ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170506091617:820s.719207273ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170506091617:820s.720042017ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170506091617:820s.720909881ns][test_sqlite.c][main][line_661]<"info":********************* delete all
+[20170506091617:820s.740338956ns][test_sqlite.c][main][line_663]<"info":********************* search all
+[20170506091617:820s.741466416ns][test_sqlite.c][main][line_672]<"info":********************* insert id 0
+[20170506091617:820s.742270704ns][../../hz_libc/hz_sqlite.c][hz_db_exec][line_318]<"debug":will exec table sql=INSERT INTO test_t1 (id,time_input,time_output,info) VALUES (0, '20170327', 'null','jasmine'); 
+[20170506091617:820s.763854056ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 0
+
+[20170506091617:820s.765539936ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170506091617:820s.766990749ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170506091617:820s.768523605ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine
+
+[20170506091617:820s.769983646ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170506091617:820s.771443554ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170506091617:820s.772978067ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170506091617:820s.774505163ns][test_sqlite.c][main][line_694]<"info":********************* replace test
+[20170506091617:820s.775963956ns][../../hz_libc/hz_sqlite.c][hz_db_exec][line_318]<"debug":will exec table sql=replace INTO test_t1 (id,time_input,time_output,info) VALUES (0, '20170506', 'null','jasmine'); 
+warning:uninit mutex lt_log
+[20170506091657:860s.806244722ns][test_sqlite.c][main][line_596]<"warn":warning test
+[20170506091657:860s.807856851ns][../../hz_libc/hz_sqlite.c][hz_db_create_table][line_205]<"info":creat table file if file not exist
+[20170506091657:860s.809517532ns][../../hz_libc/hz_sqlite.c][hz_db_create_table][line_210]<"info":file data3.db exist 
+[20170506091657:860s.811703056ns][../../hz_libc/hz_sqlite.c][hz_db_exec][line_318]<"debug":will exec table sql=INSERT INTO test_t1 (id,time_input,time_output,info) VALUES (null, '20170327', 'null','jasmine'); 
+[20170506091657:860s.827668366ns][../../hz_libc/hz_sqlite.c][hz_db_exec][line_318]<"debug":will exec table sql=INSERT INTO test_t1 (id,time_input,time_output,info) VALUES (null, '20170327', 'null','jasmine2'); 
+[20170506091657:860s.842389406ns][../../hz_libc/hz_sqlite.c][hz_db_exec][line_318]<"debug":will exec table sql=INSERT INTO test_t1 (id,time_input,time_output,info) VALUES (null, '20170327', 'null','jasmine2'); 
+[20170506091657:860s.853312386ns][test_sqlite.c][main][line_644]<"info":********************* search all
+[20170506091657:860s.855371947ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 0
+
+[20170506091657:860s.856987747ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170506
+
+[20170506091657:860s.858507776ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170506091657:860s.860087528ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine
+
+[20170506091657:860s.861438513ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170506091657:860s.862767813ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170506091657:860s.864155337ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170506091657:860s.865548886ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 1
+
+[20170506091657:860s.866983222ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170506091657:860s.868469891ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170506091657:860s.869636711ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine
+
+[20170506091657:860s.870820620ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170506091657:860s.871965852ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170506091657:860s.873221532ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170506091657:860s.874413997ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 2
+
+[20170506091657:860s.875589625ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170506091657:860s.876822170ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170506091657:860s.878018066ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine2
+
+[20170506091657:860s.879179342ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170506091657:860s.880379583ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170506091657:860s.881392815ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170506091657:860s.882432219ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 3
+
+[20170506091657:860s.883467868ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170506091657:860s.884605420ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170506091657:860s.885448828ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine2
+
+[20170506091657:860s.886286429ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170506091657:860s.887086841ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170506091657:860s.887919905ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170506091657:860s.888837630ns][test_sqlite.c][main][line_646]<"info":********************* search id 1
+[20170506091657:860s.889974966ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 1
+
+[20170506091657:860s.891019578ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170506091657:860s.892075051ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170506091657:860s.892850995ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine
+
+[20170506091657:860s.893615059ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170506091657:860s.894383035ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170506091657:860s.895155284ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170506091657:860s.895947860ns][test_sqlite.c][main][line_648]<"info":********************* search id 2
+[20170506091657:860s.896942768ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 2
+
+[20170506091657:860s.897719576ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170506091657:860s.898486053ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170506091657:860s.899254713ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine2
+
+[20170506091657:860s.900043101ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170506091657:860s.900859221ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170506091657:860s.901634746ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170506091657:860s.902432422ns][test_sqlite.c][main][line_650]<"info":********************* search id max
+[20170506091657:860s.903464890ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 3
+
+[20170506091657:860s.904275479ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170506091657:860s.904970123ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170506091657:860s.905658935ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine2
+
+[20170506091657:860s.906332543ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170506091657:860s.907043340ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170506091657:860s.907790040ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170506091657:860s.908558220ns][test_sqlite.c][main][line_652]<"info":********************* delete id 2
+[20170506091657:860s.918882615ns][test_sqlite.c][main][line_655]<"info":********************* search all
+[20170506091657:860s.919843372ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 0
+
+[20170506091657:860s.920581036ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170506
+
+[20170506091657:860s.921237736ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170506091657:860s.921886576ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine
+
+[20170506091657:860s.922541861ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170506091657:860s.923208917ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170506091657:860s.923866421ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170506091657:860s.924555785ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 1
+
+[20170506091657:860s.925212245ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170506091657:860s.925872666ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170506091657:860s.926525898ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine
+
+[20170506091657:860s.927158610ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170506091657:860s.927826218ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170506091657:860s.928558267ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170506091657:860s.929220583ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 3
+
+[20170506091657:860s.929852047ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170506091657:860s.930476875ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170506091657:860s.931110727ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine2
+
+[20170506091657:860s.931760432ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170506091657:860s.932485268ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170506091657:860s.933069704ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170506091657:860s.933707660ns][test_sqlite.c][main][line_657]<"info":********************* delete id max
+[20170506091657:860s.955529079ns][test_sqlite.c][main][line_659]<"info":********************* search all
+[20170506091657:860s.956338984ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 0
+
+[20170506091657:860s.956890084ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170506
+
+[20170506091657:860s.957409012ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170506091657:860s.957910444ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine
+
+[20170506091657:860s.958421236ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170506091657:860s.958923605ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170506091657:860s.959438429ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170506091657:860s.959956901ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 1
+
+[20170506091657:860s.960494573ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170506091657:860s.961033781ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170506091657:860s.961549733ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine
+
+[20170506091657:860s.962056782ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170506091657:860s.962557758ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170506091657:860s.963059082ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170506091657:860s.963591762ns][test_sqlite.c][main][line_661]<"info":********************* delete all
+[20170506091657:860s.982972776ns][test_sqlite.c][main][line_663]<"info":********************* search all
+[20170506091657:860s.983736937ns][test_sqlite.c][main][line_672]<"info":********************* insert id 0
+[20170506091657:860s.984274861ns][../../hz_libc/hz_sqlite.c][hz_db_exec][line_318]<"debug":will exec table sql=INSERT INTO test_t1 (id,time_input,time_output,info) VALUES (0, '20170327', 'null','jasmine'); 
+[20170506091657:861s.002987055ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 0
+
+[20170506091657:861s.003539583ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170506091657:861s.004086543ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170506091657:861s.004615912ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine
+
+[20170506091657:861s.005153968ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170506091657:861s.005691016ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170506091657:861s.006231628ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170506091657:861s.006791332ns][test_sqlite.c][main][line_694]<"info":********************* replace test
+[20170506091657:861s.007330516ns][../../hz_libc/hz_sqlite.c][hz_db_exec][line_318]<"debug":will exec table sql=replace INTO test_t1 (id,time_input,time_output,info) VALUES (0, '20170506', 'null','jasmine'); 
+[20170506091657:861s.023760526ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 0
+
+[20170506091657:861s.024380410ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170506
+
+[20170506091657:861s.024908698ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170506091657:861s.025434886ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine
+
+[20170506091657:861s.025979315ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170506091657:861s.026513063ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170506091657:861s.027054395ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+warning:uninit mutex lt_log
+[20170506091749:913s.461215272ns][test_sqlite.c][main][line_596]<"warn":warning test
+[20170506091749:913s.462872569ns][../../hz_libc/hz_sqlite.c][hz_db_create_table][line_205]<"info":creat table file if file not exist
+[20170506091749:913s.464601985ns][../../hz_libc/hz_sqlite.c][hz_db_create_table][line_210]<"info":file data3.db exist 
+[20170506091749:913s.466899362ns][../../hz_libc/hz_sqlite.c][hz_db_exec][line_318]<"debug":will exec table sql=INSERT INTO test_t1 (id,time_input,time_output,info) VALUES (null, '20170327', 'null','jasmine'); 
+[20170506091750:913s.489666033ns][../../hz_libc/hz_sqlite.c][hz_db_exec][line_318]<"debug":will exec table sql=INSERT INTO test_t1 (id,time_input,time_output,info) VALUES (null, '20170327', 'null','jasmine2'); 
+[20170506091750:913s.503874146ns][../../hz_libc/hz_sqlite.c][hz_db_exec][line_318]<"debug":will exec table sql=INSERT INTO test_t1 (id,time_input,time_output,info) VALUES (null, '20170327', 'null','jasmine2'); 
+[20170506091750:913s.516072726ns][test_sqlite.c][main][line_644]<"info":********************* search all
+[20170506091750:913s.518090455ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 0
+
+[20170506091750:913s.519607411ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170506
+
+[20170506091750:913s.521188040ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170506091750:913s.522713024ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine
+
+[20170506091750:913s.524286921ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170506091750:913s.525843885ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170506091750:913s.527403946ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170506091750:913s.528984166ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 1
+
+[20170506091750:913s.530516951ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170506091750:913s.532087451ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170506091750:913s.533626032ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine
+
+[20170506091750:913s.535138584ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170506091750:913s.536714497ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170506091750:913s.538227961ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170506091750:913s.539769938ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 2
+
+[20170506091750:913s.541348910ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170506091750:913s.542866299ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170506091750:913s.544449399ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine2
+
+[20170506091750:913s.545965228ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170506091750:913s.547520416ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170506091750:913s.549124229ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170506091750:913s.550662293ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 3
+
+[20170506091750:913s.552248058ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170506091750:913s.553776150ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170506091750:913s.555289819ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine2
+
+[20170506091750:913s.556896115ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170506091750:913s.558417740ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170506091750:913s.559947800ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170506091750:913s.561618729ns][test_sqlite.c][main][line_646]<"info":********************* search id 1
+[20170506091750:913s.563558530ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 1
+
+[20170506091750:913s.565143802ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170506091750:913s.566663363ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170506091750:913s.568215851ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine
+
+[20170506091750:913s.569767344ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170506091750:913s.571349400ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170506091750:913s.573564025ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170506091750:913s.574908073ns][test_sqlite.c][main][line_648]<"info":********************* search id 2
+[20170506091750:913s.576672266ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 2
+
+[20170506091750:913s.578017490ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170506091750:913s.579352503ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170506091750:913s.580732863ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine2
+
+[20170506091750:913s.582187984ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170506091750:913s.583531012ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170506091750:913s.584790653ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170506091750:913s.585884369ns][test_sqlite.c][main][line_650]<"info":********************* search id max
+[20170506091750:913s.587427653ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 3
+
+[20170506091750:913s.588643062ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170506091750:913s.589730214ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170506091750:913s.590809711ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine2
+
+[20170506091750:913s.592044775ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170506091750:913s.593200939ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170506091750:913s.594354092ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170506091750:913s.595558964ns][test_sqlite.c][main][line_652]<"info":********************* delete id 2
+[20170506091750:913s.604289615ns][test_sqlite.c][main][line_655]<"info":********************* search all
+[20170506091750:913s.605549447ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 0
+
+[20170506091750:913s.606481656ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170506
+
+[20170506091750:913s.607439184ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170506091750:913s.608405940ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine
+
+[20170506091750:913s.609324205ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170506091750:913s.610247077ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170506091750:913s.611183305ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170506091750:913s.612164486ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 1
+
+[20170506091750:913s.613020950ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170506091750:913s.613854158ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170506091750:913s.614685134ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine
+
+[20170506091750:913s.615514239ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170506091750:913s.616439607ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170506091750:913s.617263959ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170506091750:913s.618113176ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 3
+
+[20170506091750:913s.618966844ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170506091750:913s.619786900ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170506091750:913s.620660140ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine2
+
+[20170506091750:913s.621480629ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170506091750:913s.622304657ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170506091750:913s.623129369ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170506091750:913s.624033749ns][test_sqlite.c][main][line_657]<"info":********************* delete id max
+[20170506091750:913s.633601221ns][test_sqlite.c][main][line_659]<"info":********************* search all
+[20170506091750:913s.634649553ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 0
+
+[20170506091750:913s.635418525ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170506
+
+[20170506091750:913s.636223737ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170506091750:913s.636929542ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine
+
+[20170506091750:913s.637624186ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170506091750:913s.638324482ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170506091750:913s.639017974ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170506091750:913s.639740843ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 1
+
+[20170506091750:913s.640493255ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170327
+
+[20170506091750:913s.641195483ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170506091750:913s.641900375ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine
+
+[20170506091750:913s.642614712ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170506091750:913s.643320600ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170506091750:913s.644050644ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+
+[20170506091750:913s.644793108ns][test_sqlite.c][main][line_661]<"info":********************* delete all
+[20170506091750:913s.661348350ns][test_sqlite.c][main][line_663]<"info":********************* search all
+[20170506091750:913s.663766735ns][test_sqlite.c][main][line_696]<"info":********************* replace test
+[20170506091750:913s.665405983ns][../../hz_libc/hz_sqlite.c][hz_db_exec][line_318]<"debug":will exec table sql=replace INTO test_t1 (id,time_input,time_output,info) VALUES (0, '20170506', 'null','jasmine'); 
+[20170506091750:913s.689740119ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":id = 0
+
+[20170506091750:913s.691343788ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_input = 20170506
+
+[20170506091750:913s.692939536ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":time_output = null
+
+[20170506091750:913s.694475873ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":info = jasmine
+
+[20170506091750:913s.696044513ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve1 = NULL
+
+[20170506091750:913s.697583658ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve2 = NULL
+
+[20170506091750:913s.699122118ns][../../hz_libc/hz_sqlite.c][hz_db_callback_display][line_166]<"info":reserve3 = NULL
+

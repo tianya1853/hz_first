@@ -201,8 +201,10 @@ hz_ret_o hz_db_create_table(hz_db_o *hz_db,d8 *sql)
 	hz_tmp_o tmp;
 	hz_tmp_o_init(&tmp);
 	ret.v=0;
-
+	/**
 	lt_info("creat table file if file not exist");
+	
+
 	tmp.fp = fopen( hz_db->dbname , "rb" );
 	if( tmp.fp != NULL )
 	{
@@ -210,7 +212,7 @@ hz_ret_o hz_db_create_table(hz_db_o *hz_db,d8 *sql)
 		lt_info("file %s exist ",hz_db->dbname);
 		return ret;
 	}
-	
+	*/
 	do
 	{
 		hz_mutex_lock(&hz_db->db_mutex);
@@ -295,6 +297,18 @@ can used for insert,delete
 @param arg1 arg2描述
 @param arg2 arg2描述
 @return 返回值描述  hz_ret_o.v < 0 failed 
+
+
+UPDATE table_name
+SET column1 = value1, column2 = value2...., columnN = valueN
+WHERE [condition];
+
+e.g. UPDATE COMPANY SET ADDRESS = 'Texas' WHERE ID = 6;
+
+
+replace INTO test_t1 (id,time_input,time_output,info) "  \
+	 	"VALUES (0, '20170506', 'null','jasmine');
+
 */
 hz_ret_o hz_db_exec(hz_db_o *hz_db,d8 * table,d8 *sql)
 {
@@ -403,9 +417,9 @@ void hz_db_delete_all(hz_db_o *hz_db,d8 * table)
     d8 * sql;
     //d8 * hz_db->zErrMsg = 0;
 	hz_mutex_lock(&hz_db->db_mutex);
-    sql = sqlite3_mprintf("delete from %s",table);
-    sqlite3_exec(hz_db->db,sql,0,0,&hz_db->zErrMsg);
-    sqlite3_free(sql);
+	sql = sqlite3_mprintf("delete from %s",table);
+	sqlite3_exec(hz_db->db,sql,0,0,&hz_db->zErrMsg);
+	sqlite3_free(sql);
 	hz_mutex_unlock(&hz_db->db_mutex);
 }
 

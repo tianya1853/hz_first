@@ -215,7 +215,7 @@ hz_ret_o module_obj(hz_object *obj)
 		}
 	}
 	tmp.ret.v=0-tmp.ret.v;
-	return ret;	
+	return tmp.ret;	
 }
 
 

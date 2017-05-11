@@ -103,11 +103,11 @@ static s32 _hz_log_init_()
 	s32 ret=0;
 
 	d8 tmp_cmd[256];
-	sprintf(tmp_cmd,"mkdir -p %s ",hz_log_dir);
-	
+	sprintf(tmp_cmd,"mkdir -p %s ",hz_log_dir);	
 	system(tmp_cmd);
-	hz_mutex_init(&mutex_print,NULL);
 	sprintf(mutex_print.name,"lt_log");
+	hz_mutex_init(&mutex_print,NULL);
+	
 	return ret;
 
 }

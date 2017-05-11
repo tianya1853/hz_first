@@ -74,9 +74,13 @@ F_OK 只判断是否存在
 */
 
 #if 1
-s32 file_exists(d8 *filename)
+s32 file_exist(d8 *filename)
 {
-	return (access(filename, 0) == 0);
+	if ( access(filename, 0) == 0 )
+		return HZ_SUCCESS;
+	else
+		return HZ_FAIL;
+	//return (access(filename, 0) == 0);
 }
 #else
 
@@ -110,8 +114,31 @@ s32 file_touch(d8 *filename)
 	}		
 }
 
+/**
+#include<stdio.h>
+int main(){
+    char filename[80];
+    printf("The file to delete:");
+    gets(filename);
+    if( remove(filename) == 0 )
+        printf("Removed %s.", filename);
+    else
+        perror("remove");
+}
+*/
 
-
+s32 file_rm(d8 *filename)
+{
+	
+	if( remove(filename) == 0  )
+	{
+		return HZ_SUCCESS;
+	}else
+	{
+		lt_error("remove file %s, failed",filename);
+		return HZ_FAIL;
+	}		
+}
 
 #if 0
 static s32 popen_read(d8 *cmd,d8 *buf,s32 buflen_max)

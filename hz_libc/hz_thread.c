@@ -36,7 +36,12 @@ s32 hz_mutex_lock(hz_mutex_t *mutex)
 	}else
 	{
 		//lt_warn("uninit mutex");  can not use lt_warn , had used hz_mutex_lock & hz_mutex_unlock  in lt_warn
-		hzprintf("warning:uninit mutex %s\n",mutex->name);
+		//if (   0 != strncmp(mutex->name,"lt_log", sizeof("lt_log")  )    )   //it is invalid
+		{
+			// invalid
+			//hzprintf("warning:uninit mutex %s\n",mutex->name);
+		}
+			
 		return 0;
 	}
 }
@@ -49,7 +54,11 @@ s32 hz_mutex_unlock(hz_mutex_t *mutex)
 	}else
 	{
 		//lt_warn("uninit mutex"); can not use lt_warn , had used hz_mutex_lock & hz_mutex_unlock  in lt_warn
-		hzprintf("warning:uninit mutex %s\n",mutex->name);
+		//hzprintf("warning:uninit mutex %s\n",mutex->name);
+		if (   0 != strncmp(mutex->name,"lt_log", sizeof("lt_log")  )    )
+		{//
+			hzprintf("warning:uninit mutex %s\n",mutex->name);
+		}
 		return 0;
 	}	
 }

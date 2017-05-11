@@ -48,7 +48,7 @@ typedef struct{
 	u32 min;
 	u32 sec;
 
-	s32 time_s;
+	s32 time_s;//poweron time
 	s32 time_ns;
 }lt_time_t;
 

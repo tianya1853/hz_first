@@ -663,6 +663,48 @@ do
 	lt_info("********************* search all");
 	hz_db_search_all(&hz_db,"test_t1");
 
+
+/**
+insert into [t_Table] ([fName]) select '张三'
+where not exists (SELECT 1 FROM [t_Table] where [fName] = '张三'); 
+*/
+	
+/**
+	lt_info("********************* insert id 0");
+	sql = 	"INSERT INTO test_t1 (id,time_input,time_output,info) "  \
+	 	"VALUES (0, '20170327', 'null','jasmine'); ";
+	tmp.ret = hz_db_exec(&hz_db,"test_t1",sql);
+	if ( tmp.ret.v < 0 )
+	{
+		lt_error("insert failed");
+		break;
+	}
+*/
+/**
+	lt_info("********************* exists test");
+	sql = 	"INSERT INTO test_t1 (id,time_input,time_output,info) "  \
+	 	"VALUES (0, '20170327', 'null','jasmine') select id where not exists ( select * FROM test_t1 where id = 0); ";
+	tmp.ret = hz_db_exec(&hz_db,"test_t1",sql);
+	if ( tmp.ret.v < 0 )
+	{
+		break;
+	}
+*/
+	hz_db_search_all(&hz_db,"test_t1");
+
+
+	lt_info("********************* replace test");
+	// if not exist record then insert it,else update the record
+	sql = 	"replace INTO test_t1 (id,time_input,time_output,info) "  \
+	 	"VALUES (0, '20170506', 'null','jasmine'); ";
+	tmp.ret = hz_db_exec(&hz_db,"test_t1",sql);
+	if ( tmp.ret.v < 0 )
+	{
+		break;
+	}
+
+
+	hz_db_search_all(&hz_db,"test_t1");
 }while(0);
 	hz_db_close_table(&hz_db);
 	return 0;

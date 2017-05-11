@@ -20,7 +20,7 @@ Description:
 #define __HZ_FILE_H__
 
 /*
-return:SUCCESS/FAIL
+return:HZ_SUCCESS/HZ_FAIL
 */
 s32 file_exist(d8 *filename);
 s32 file_touch(d8 *filename);
