@@ -16,17 +16,18 @@ Date:
 Version:
 Description:
 *******************************************************************/
-#include "hz_include.h"
+
 #include <stdarg.h>
 #include <stdio.h>
 #include <unistd.h>
 #include <time.h>
-#include "hz_type.h"
+//#include "hz_type.h"
+#include "hz_include.h"
 //#include "hz_log.h"
 
 
 hz_mutex_t mutex_print;   //={0,PTHREAD_MUTEX_INITIALIZER};
-
+#define JSON_CONFIG "hz_libc.json"
 
 
 #if 1
@@ -37,6 +38,8 @@ hz_mutex_t mutex_print;   //={0,PTHREAD_MUTEX_INITIALIZER};
 	#else
 		d8 *hz_log_dir="/mnt/log/log_license";
 		d8 *hz_log_file="hz_license.log";
+		d8 hz_log_file_buf[128];
+		d8 hz_log_dir_buf[128];
 	#endif
 
 #else
@@ -89,10 +92,49 @@ s32 hz_log_init(int level,char *path_log,char *file_name_log)
 	path_log=path_log;
 	file_name_log=file_name_log;
 
+	hz_cjson_o hz_cjson;
+	hz_sprintf(hz_cjson.filename,"%s",JSON_CONFIG );
+	hz_cjson_dofile(&hz_cjson);
+	if (hz_cjson.cjson_root == NULL)
+	{
+		printf("error:hz_cjson_dofile failed\n");
+		return 0;
+	}
 
 
-	hz_log_dir=path_log;
-	hz_log_file=file_name_log;
+	cJSON  *cjson_obj ,*cjson_Item;//not need free
+	cjson_obj=cJSON_GetObjectItem(hz_cjson.cjson_root,"hz_libc");
+
+	cjson_Item=cJSON_GetObjectItem(cjson_obj,"hz_log_count") ;
+	printf("hz_log_count %d\n",cjson_Item->valueint);
+	hz_log_count = cjson_Item->valueint;
+	
+	cjson_Item=cJSON_GetObjectItem(cjson_obj,"hz_log_max_size") ;
+	printf("hz_log_max_size %d\n",cjson_Item->valueint);
+	hz_log_max_size = cjson_Item->valueint;
+
+	cjson_Item=cJSON_GetObjectItem(cjson_obj,"hz_log_dir") ;	
+	hz_log_dir = cjson_Item->valuestring;
+	hz_sprintf(hz_log_dir_buf,"%s",hz_log_dir);
+
+	cjson_Item=cJSON_GetObjectItem(cjson_obj,"hz_log_file") ;
+	printf("hz_log_file %s\n",cjson_Item->valuestring);  	
+	if ( 0 != hz_strncmp(cjson_Item->valuestring,"self",strlen("self") ) )	
+	{
+		//instead app self name
+		hz_log_file = cjson_Item->valuestring ;		
+	}else
+	{
+		hz_log_file = file_name_log;
+	}
+	hz_sprintf(hz_log_file_buf,"%s",hz_log_file);
+	//d8 *out = cJSON_Print(hz_cjson.cjson_root );   //将json形式打印成正常字符串形式  	
+	//free(out);
+	cJSON_Delete( hz_cjson.cjson_root );
+
+	hz_log_dir  = hz_log_dir_buf;
+	hz_log_file = hz_log_file_buf;
+	
 	printf("log file is %s/%s\n",hz_log_dir,hz_log_file);
 	return HZ_SUCCESS;
 }

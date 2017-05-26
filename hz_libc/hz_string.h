@@ -23,6 +23,7 @@ Description:
 
 */
 int hz_grep(char *match,char *string);
-
+#define hz_strcmp strcmp
+#define hz_strncmp strncmp
 
 #endif /* !__HZ_STRING_H__ */

@@ -1,0 +1,11 @@
+{
+    "name": "ver2017", 
+    "hz_libc": {
+        "hz_log_dir":		".", 
+	"comment": 		"hz_log_file default \"self\" ,will use app name as log file",
+	"hz_log_file":		"self",        
+	"hz_log_count": 	23,
+	"hz_log_max_size": 	1024,
+	"reserved":		false
+    }
+}

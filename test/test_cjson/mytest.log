@@ -1,0 +1,17 @@
+[20170526155355:23254s.239777389ns][mytest.c][main][line_33]<"info":frame rate 24
+
+[20170526155355:23254s.248348765ns][mytest.c][main][line_38]<"info":type rect 
+
+[20170526155355:23254s.249218887ns][mytest.c][main][line_42]<"info":
+{
+	"name":	"Jack (\"Bee\") Nimble",
+	"format":	{
+		"type":	"rect",
+		"width":	1920,
+		"height":	1080,
+		"interlace":	false,
+		"frame rate":	24
+	}
+}
+
+[20170526155355:23254s.250523272ns][mytest.c][main][line_51]<"info":test log file use hz_libc.json config file

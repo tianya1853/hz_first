@@ -42,7 +42,7 @@ typedef struct __hz_mem_str_o__
 }hz_mem_str_o;
 hz_ret_t hz_mem2str(hz_mem_str_o * mem2str);
 hz_ret_t hz_str2mem(hz_mem_str_o * mem_str);
-
+void *hz_malloc(u32 num_bytes);
 
 
 #endif /* !__HZ_STRING_H__ */

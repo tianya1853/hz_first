@@ -23,6 +23,10 @@ Description:
 
 #include <stdio.h>
 #include <string.h>
+
+/**
+	malloc free use
+*/
 #include <stdlib.h>
 //#include <sys/types.h>
 #include <sys/socket.h>
@@ -69,5 +73,9 @@ flock
 #endif
 
 #include "hz_semaphore.h"
+#include "cJSON.h"
+#include "hz_cjson.h"
+
+
 
 #endif /* !__TYPE_H__ */
