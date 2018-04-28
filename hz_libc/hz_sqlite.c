@@ -16,7 +16,7 @@ Date:
 Version:
 Description:
 *******************************************************************/
-
+#ifndef  HZ_LIBC_NO_SQLITE
 #include "hz_include.h"
 
 /**
@@ -425,5 +425,5 @@ void hz_db_delete_all(hz_db_o *hz_db,d8 * table)
 
 
 
-
+#endif
 
