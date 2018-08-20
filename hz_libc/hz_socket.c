@@ -398,7 +398,12 @@ SO_RCVTIMEO和SO_SNDTIMEO ，它们分别用来设置socket接收数据超时时
 					setsockopt(connectfd, SOL_SOCKET, SO_RCVTIMEO, &tv_out, sizeof(tv_out));
 				}								
 				lt_info("recv timeout =%d",thread_arg->recv_timeout);
-
+				
+				tv_out.tv_sec  = 0;
+				tv_out.tv_usec = 1000; //send function maybe block  .e.g. jmx zhenpian
+				//(具体参数可以man一下，或查看MSDN)
+				//填充这个结构后，我们就可以以如下的方式调用这个函数：
+				setsockopt(connectfd, SOL_SOCKET, SO_SNDTIMEO, &tv_out, sizeof(tv_out));
 				lt_info("Yougot a connection from cient's ip is %s, prot is %d\n",inet_ntoa(client.sin_addr),htons(client.sin_port));  
 				//casx = CASX_STEP_00 ;
 				//break;
